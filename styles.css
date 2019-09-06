@@ -1,0 +1,173 @@
+/* Color Palette 
+Mikado Yellow           #F9C413
+Carrot Orange           #ED9B21
+Azurish White           #D3EFFF
+Snow (default)
+Corn Silk (default)
+*/ 
+
+
+
+
+/* GLOBAL */
+html {
+    margin: 0; 
+    padding: 0; 
+    background-color: #FFC761;   
+    color: black; 
+    scroll-behavior: smooth; 
+}
+
+/* Make vertical scrollbar invisible */ 
+::-webkit-scrollbar {
+    width: 0px;  
+}
+    
+/* hack to get margins on overll page to be actual zero on my browser 
+reference: https://css-tricks.com/forums/topic/solved-strange-css-problem-unknown-margin/*/ 
+*, html {margin:0;}
+
+main > h1 {
+    text-align: center;  
+    padding: 250px 0px; 
+    margin: 0px; 
+    line-height: 50px;
+    background-image: url("Images/Back3.jpg"); 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+}
+
+/* Adjusts main title */
+div > p {
+    margin: 45px; 
+    font-size: 5.5rem; 
+    line-height: 65px; 
+}
+
+h1 {
+    color: #ED9B21; 
+    font-family: 'Lobster Two', cursive;
+    font-size: 4.5rem; 
+}
+
+section {
+    width: 100%; 
+    height: 500px; 
+    overflow: hidden; 
+    background-color: cornsilk; 
+}
+
+.justifyleft {
+    width: 100%; 
+    justify-content: center; 
+    padding: 50px; 
+    padding-right: 400px; 
+}
+
+.justifyright {
+    width: 100%; 
+    justify-content: center; 
+    padding: 50px; 
+    padding-left: 500px; 
+}
+
+.left {
+    float: left; 
+}
+
+.right {
+    float: right; 
+}
+
+
+.videoBackground {
+    width: device; 
+    height: 450px; 
+    overflow: hidden; 
+}
+
+.transbox {
+    background-color: snow;
+    padding: 15px 10px;
+    background-attachment: none; 
+    display: inline-block; 
+    opacity: .95; 
+}
+
+.border {
+    border-style: solid; 
+    border-width: 5px; 
+    border-color: snow;
+    border-bottom-color: #F9C413;
+    border-right-color: #D3EFFF; 
+    border-left-color: cornsilk; 
+    padding: 35px 30px; 
+    display: inline-block;
+}
+
+body {
+    color: black;
+    font-family: 'Karma', serif;
+    text-align: center; 
+}
+
+/* Video */
+video {
+    width: 100%; 
+}
+
+
+/* Footer */ 
+footer {
+    clear: both;
+    font-family: 'Life Savers', cursive;
+    text-align: center; 
+    padding: 25px; 
+}
+
+
+
+/* Navigation */ 
+nav {
+    background-color: #F9C413; 
+    text-align: center; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    
+}
+
+
+/* Links
+-----------------------*/ 
+.homebar {
+    display: inline-block; 
+    padding: 15px 20px; 
+    font-weight: 700; 
+    color: snow; 
+    font-size: 1rem; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D3EFFF; 
+}
+
+/*Transition source: https://stackoverflow.com/questions/12194115/is-there-an-animatable-transition-property-for-css-filters*/
+img:hover {
+    filter: grayscale(80%);
+    -webkit-transition : -webkit-filter 500ms linear; 
+    transform: scale(1.2); 
+    transition: all .2s ease;
+}
+
+
+/* Content Wrap
+----------------------*/
+.content-wrap {
+    max-width: device; 
+    margin: 0px; 
+}
+
